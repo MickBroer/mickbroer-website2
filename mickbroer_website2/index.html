@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="mickbroer_website.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+       <link rel="icon" href="https://f4.bcbits.com/img/a2418751887_10.jpg">
+      <title>Mick Broer</title>
+       <style>
+      body {
+        padding: 10em;
+      }
+      .gen {
+        border: solid;
+      }
+      .sitenaam {
+        font-family: "Times New Roman", Times, serif;
+          font-size: 3em;
+          line-height: 1.2em;
+          margin-left: 100px;
+      }
+      .mail {
+        font-family: "Times New Roman", Times, serif;
+          font-size: 1em;
+          line-height: 1.2em;
+          margin-left: 190px;
+      }
+      .white-box {
+          background-color: white;
+          color: black;
+          width: 450px;
+          height: 200%;
+          position: relative;
+      }
+      p {
+        font-family: "Times New Roman", Times, serif;
+          font-size: 1.5em;
+          line-height: 1.2em;
+          margin-left: 100px;
+          
+      }
+      a {
+        color: rgb(0, 0, 0);
+        
+      }
+      audio {
+        background-color: rgb(255, 255, 255);
+        height:1em;
+        margin-left: 100px;
+        
+      }
+
+    </style>
+  <audio id='mySound' src="files/audio/ikmaakaudiowerken.mp3" ></audio>
+    <div id="exile"></div>
+    <div id="overhoop"></div>
+    <div id="weesper"></div>
+    <div id="juni"></div>
+    <div class="white-box">
+    <p class="sitenaam">mickbroer.org</p>
+    <p>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</p>
+    <p id="generate" class="gen">---ik maak audio werkjes---</p>
+    <p>voor 
+      <a href="https://youtu.be/tO6bkIg1nr0" onmouseover="bgChange(exile.style.backgroundImage)" 
+        onmouseout="bgChange('')" target="blank">installaties</a> &
+      <a href="https://ita.nl/nl/voorstellingen/overhoop/1656268/" onmouseover="bgChange(overhoop.style.backgroundImage)" 
+        onmouseout="bgChange('')" target="blank">theater</a> &
+      <a href="https://youtu.be/dBAzBBcZ5wQ" onmouseover="bgChange(weesper.style.backgroundImage)" 
+        onmouseout="bgChange('')" target="blank">radio</a> &
+      <a href="https://mickbroer.bandcamp.com/" onmouseover="bgChange(juni.style.backgroundImage)" 
+        onmouseout="bgChange('')" target="blank"> mezelf</a> </p>
+    <p>-------------------------------</p>
+    <p>>>live in de nijverheid met joris, roos en millie</p>
+    <audio controls>
+      <source src="files/audio/nijverheid.mp3" type="audio/mpeg">
+    </audio>
+    <p>-------------------------------</p>
+    <a class="mail" href="mailto:mickbroerxoxo@gmail.com"> [ v ]  </a>
+    </div>
+  <script type="text/javascript">
+    
+    exile.style.backgroundImage = "url('files/images/exile_is_a_jealous_state.png')";
+    overhoop.style.backgroundImage = "url('files/images/overhoop.png')";
+    weesper.style.backgroundImage = "url('files/images/weesper.png')";
+    juni.style.backgroundImage = "url('files/images/juni_2022.png')";
+
+    function bgChange(bg) {
+        document.body.style.backgroundImage = bg;
+      }
+
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+          thissound.play();
+      }
+  </script>
+  </body>
+</head>
+</html>
